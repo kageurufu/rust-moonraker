@@ -1,0 +1,7 @@
+[workspace]
+resolver = "3"
+members = ["crates/*", "test-client"]
+default-members = ["test-client"]
+
+[workspace.dependencies]
+jsonrpsee = "0.24"

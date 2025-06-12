@@ -1,0 +1,16 @@
+[package]
+name = "klipper"
+version = "0.1.0"
+edition = "2024"
+description = "Klipper printer state"
+
+[dependencies]
+moonraker = { path = "../moonraker" }
+jsonrpsee = { workspace = true, features = ["ws-client"] }
+
+serde = "*"
+serde_json = "*"
+anyhow = "*"
+futures = "0.3.31"
+tokio = "*"
+tracing = "0.1.41"
